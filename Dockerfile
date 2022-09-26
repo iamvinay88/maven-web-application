@@ -1,4 +1,4 @@
-FROM  maven:3.5-jdk-8-alpine as outputWar
+FROM  maven:3.5-jdk-8 as outputWar
 WORKDIR /app01
 COPY  src/ . 
 COPY pom.xml .
