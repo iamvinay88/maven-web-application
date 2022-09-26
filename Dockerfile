@@ -1,6 +1,7 @@
 FROM  maven:3.5-jdk-8-alpine as outputWar
 WORKDIR /app01
-COPY  app/new/ .
+COPY  src/ . 
+COPY pom.xml .
 #WORKDIR /app01/app/
 RUN mvn clean package
 
